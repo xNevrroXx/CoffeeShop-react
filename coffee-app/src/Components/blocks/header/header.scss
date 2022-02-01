@@ -1,0 +1,36 @@
+.header {
+    width: 355px;
+    margin-bottom: 111px;
+    margin-left: 150px;
+    li {
+        display: flex;
+        justify-content: flex-start;
+        list-style-type: none;
+    }
+    img {
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin-right: -5px;
+    }
+    ul {
+        padding-left: 0;
+    }
+    &__link-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    &__menu-link {
+        font-family: "Merienda";
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 17px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        &:hover {
+            color: rgba(248, 211, 141, 0.7)
+        }
+    }
+}
