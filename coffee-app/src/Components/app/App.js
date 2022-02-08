@@ -1,11 +1,11 @@
 import { Component, Fragment } from 'react';
 
-import Banner from '../mainPage/banner/banner';
+import MainPage from '../mainPage/mainPage';
 
 function App() {
 	return (
 		<div className="App">
-			<Banner/>
+			<MainPage/>
 		</div>
 	);
 }

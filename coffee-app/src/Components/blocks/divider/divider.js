@@ -5,28 +5,62 @@ import black from "../../../icons/mainPage/black.png";
 
 import "./divider.scss";
 
+// const DividerWrap = styled.div`
+//     .divider__wrappper-img {
+//         position: relative;
+//         width: 40px;
+//         height: 40px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         margin: 0 auto;
+//         margin-bottom: 35px;
+//         &::before {
+//             position: absolute;
+//             right: -65px;
+//             content: "";
+//             display: block;
+//             width: 60px;
+//             height: 1px;
+//             background: ${props => props.color === "white" ? "white" : "black"};
+//         }
+//         &::after {
+//             position: absolute;
+//             left: -65px;
+//             content: "";
+//             display: block;
+//             width: 60px;
+//             height: 1px;
+//             background: ${props => props.color === "white" ? "white" : "black"};
+//         }
+
+//     }
+// `;
+
+
 class Divider extends Component {
     constructor(props) {
         super(props);
     }
 
     render() {
-        let imgBean;
+        let dividerWrapperClass, imgBeanSrc;
+        const {color, mb40} = this.props;
+
         if(this.props.color == "white") {
-            imgBean = (
-                <img className="divider divider__img" src={white} alt="coffee beans image" />
-            );
+            dividerWrapperClass = "divider__wrappper-img_white ";
+            imgBeanSrc = white;
         } else {
-            imgBean = (
-                <img src={black} alt="coffee beans image" />
-            )
+            imgBeanSrc = black;
+            dividerWrapperClass = "divider__wrappper-img_black ";
         }
 
+        
 
         return (
-            <div className="divider">
-                <div className="divider divider__wrappper-img">
-                    {imgBean}
+            <div className="divider" color={color}>
+                <div className={"divider divider__wrappper-img " + dividerWrapperClass + (mb40 ? "divider__wrappper-img_mb40 " : "")}>
+                    <img className="divider divider__img" src={imgBeanSrc} alt="coffee beans image" />
                 </div>
             </div>
         )

@@ -13,8 +13,8 @@ function Banner() {
 
             <h1 className="title">Everything You Love About Coffee</h1>
             <Divider color="white"/>
-            <h2 className="subtitle">We makes every day full of energy and taste</h2>
-            <h2 className="subtitle">Want to try our beans?</h2>
+            <h2 className="subtitle subtitle_fw700-white">We makes every day full of energy and taste</h2>
+            <h2 className="subtitle subtitle_fw700-white">Want to try our beans?</h2>
 
             <button>More</button>
         </div>

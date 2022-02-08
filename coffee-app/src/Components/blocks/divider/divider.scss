@@ -9,24 +9,48 @@
         align-items: center;
         margin: 0 auto;
         margin-bottom: 35px;
-        &::before {
-            position: absolute;
-            right: -65px;
-            content: "";
-            display: block;
-            width: 60px;
-            height: 1px;
-            background: #FFFFFF;
+        &_mb40 {
+            margin-bottom: 40px;
         }
-        &::after {
-            position: absolute;
-            left: -65px;
-            content: "";
-            display: block;
-            width: 60px;
-            height: 1px;
-            background: #FFFFFF;
+        &_white {
+            &::before {
+                position: absolute;
+                right: -65px;
+                content: "";
+                display: block;
+                width: 60px;
+                height: 1px;
+                background: #FFFFFF;
+            }
+            &::after {
+                position: absolute;
+                left: -65px;
+                content: "";
+                display: block;
+                width: 60px;
+                height: 1px;
+                background: #FFFFFF;
+            }
         }
-
+        &_black {
+            &::before {
+                position: absolute;
+                right: -65px;
+                content: "";
+                display: block;
+                width: 60px;
+                height: 1px;
+                background: black;
+            }
+            &::after {
+                position: absolute;
+                left: -65px;
+                content: "";
+                display: block;
+                width: 60px;
+                height: 1px;
+                background: black;
+            }
+        }
     }
 }

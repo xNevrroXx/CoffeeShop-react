@@ -11,10 +11,13 @@
 
 .subtitle {
     font-family: Merienda;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 24px;
-    color: #FFFFFF;
-
+    color: black;
     margin-bottom: 20px;
+    &_fw700-white {
+        font-weight: 700;
+        color: #FFFFFF;
+    }
 }
 
